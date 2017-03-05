@@ -1,0 +1,43 @@
+{
+  "name": "jest-playground",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run devserver",
+    "clean": "rimraf -rf public/dist/",
+    "webpack": "webpack --watch",
+    "devserver": "webpack-dev-server --content-base public/",
+    "wtest:00": "cd tests/00-fetch-mock && jest --watchAll --config=jest-config.json",
+    "wtest:10": "cd tests/10-shallow && jest --watchAll --config=jest-config.json",
+    "wtest:20": "cd tests/20-mock-backend && jest --watchAll --config=jest-config.json",
+    "wtest:30": "cd tests/30-mock-fetch-async && jest --watchAll --config=jest-config.json",
+    "test:00": "cd tests/00-fetch-mock && jest --config=jest-config.json",
+    "test:10": "cd tests/10-shallow && jest --config=jest-config.json",
+    "test:20": "cd tests/20-mock-backend && jest --config=jest-config.json",
+    "test:30": "cd tests/30-mock-fetch-async && jest --config=jest-config.json",
+    "test": "npm run test:00 && npm run test:10 && npm run test:20 && npm run test:30"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "enzyme": "^2.7.1",
+    "jest": "^19.0.2",
+    "jest-fetch-mock": "^1.0.8",
+    "react-addons-test-utils": "^15.4.2",
+    "react-loader": "^2.0.0",
+    "rimraf": "^2.5.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "react": "^15",
+    "react-dom": "^15",
+    "whatwg-fetch": "^1.0.0"
+  }
+}

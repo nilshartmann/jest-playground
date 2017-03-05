@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "notify": false,
+  "testRegex": "(.*\\.test.js)$"
+}
