@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should render fine with a message received from backend 1`] = `
+<h1>
+  moin
+</h1>
+`;
+
+exports[`it should render fine without greetings 1`] = `
+<p>
+  No Greeting yet
+</p>
+`;
