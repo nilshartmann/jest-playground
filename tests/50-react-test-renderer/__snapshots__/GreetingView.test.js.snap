@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should bla 1`] = `
+<div>
+  Eingabe:
+  <input
+    onChange={[Function]}
+    type="text"
+    value={undefined}
+  />
+</div>
+`;
