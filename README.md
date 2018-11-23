@@ -5,9 +5,9 @@ code.
 
 ## Scenario: A simple React application
 
-Given we have following we have the following simplified React application:
+Given we have following the following simplified React application:
 * **GreetingView** loads a greeting from a server when it is mounted into the DOM (`componentDidMount`).
-As soon as the server response comes (later) in, the received greeting should be rendered. Otherwise a placeholder is rendered.
+As soon as the server response comes (later) in, the received greeting should be rendered. In the meantime a placeholder is rendered.
 * **backend** this is not a React component but a simple util module, that loads the data from the server.
  It uses the [fetch](https://github.github.io/fetch/) API to make the _asynchronous_ server call and invokes a callback
  with the received greeting
